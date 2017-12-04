@@ -10,6 +10,7 @@
     auto-complete
     flycheck
     git-gutter
+    haml-mode
     haskell-mode
     helm
     helm-projectile
@@ -31,6 +32,8 @@
 
 (require 'git-gutter)
 (global-git-gutter-mode t)
+
+(require 'haml-mode)
 
 (require 'helm-config)
 (helm-mode 1)
