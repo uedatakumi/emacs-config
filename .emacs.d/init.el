@@ -18,6 +18,7 @@
     monokai-theme
     projectile
     ruby-mode
+    yaml-mode
     ))
 
 (dolist (package my/favorite-packages)
@@ -43,6 +44,8 @@
 
 (projectile-mode)
 (helm-projectile-on)
+
+(require 'yaml-mode)
 
 (setq make-backup-files nil)
 
