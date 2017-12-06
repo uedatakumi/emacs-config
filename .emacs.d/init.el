@@ -17,6 +17,7 @@
     markdown-mode
     monokai-theme
     projectile
+    rubocop
     ruby-mode
     yaml-mode
     ))
@@ -38,6 +39,8 @@
 
 (require 'helm-config)
 (helm-mode 1)
+
+(require 'rubocop)
 
 (require 'ruby-mode)
 (setq ruby-insert-encoding-magic-comment nil)
