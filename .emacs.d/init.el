@@ -41,6 +41,7 @@
 (helm-mode 1)
 
 (require 'rubocop)
+(add-hook 'ruby-mode-hook 'rubocop-mode)
 
 (require 'ruby-mode)
 (setq ruby-insert-encoding-magic-comment nil)
