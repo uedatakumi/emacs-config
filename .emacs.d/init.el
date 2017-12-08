@@ -7,6 +7,7 @@
 
 (defvar my/favorite-packages
   '(
+    ag
     auto-complete
     flycheck
     git-gutter
@@ -25,6 +26,8 @@
 (dolist (package my/favorite-packages)
   (unless (package-installed-p package)
     (package-install package)))
+
+(require 'ag)
 
 (require 'auto-complete)
 (ac-config-default)
