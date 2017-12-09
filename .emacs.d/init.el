@@ -10,6 +10,7 @@
     ag
     auto-complete
     flycheck
+    flycheck-pos-tip
     git-gutter
     haml-mode
     haskell-mode
@@ -34,6 +35,7 @@
 
 (require 'flycheck)
 (global-flycheck-mode)
+(flycheck-pos-tip-mode)
 
 (require 'git-gutter)
 (global-git-gutter-mode t)
