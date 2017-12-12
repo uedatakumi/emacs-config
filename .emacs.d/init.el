@@ -54,6 +54,10 @@
 (projectile-mode)
 (helm-projectile-on)
 
+(require 'whitespace)
+(setq whitespace-style '(face spaces space-mark tabs tab-mark))
+(global-whitespace-mode t)
+
 (require 'yaml-mode)
 
 (setq make-backup-files nil)
