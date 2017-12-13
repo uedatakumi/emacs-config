@@ -9,6 +9,7 @@
   '(
     ag
     auto-complete
+    base16-theme
     flycheck
     flycheck-pos-tip
     git-gutter
@@ -17,7 +18,6 @@
     helm
     helm-projectile
     markdown-mode
-    monokai-theme
     projectile
     rubocop
     ruby-mode
@@ -83,7 +83,7 @@
   (setq inhibit-splash-screen t))
 
 ;; Theme
-(load-theme 'monokai t)
+(load-theme 'base16-default-dark t)
 
 ;; Toolbar
 (tool-bar-mode 0)
