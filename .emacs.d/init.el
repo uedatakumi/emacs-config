@@ -21,6 +21,7 @@
     projectile
     rubocop
     ruby-mode
+    web-mode
     yaml-mode
     ))
 
@@ -53,6 +54,8 @@
 
 (projectile-mode)
 (helm-projectile-on)
+
+(require 'web-mode)
 
 (require 'whitespace)
 (setq whitespace-style '(face spaces space-mark tabs tab-mark))
