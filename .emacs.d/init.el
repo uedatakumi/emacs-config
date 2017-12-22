@@ -63,6 +63,11 @@
 
 (require 'yaml-mode)
 
+(setq helm-mini-default-sources
+      '(helm-source-projectile-files-list
+        helm-source-projectile-projects
+        helm-source-recentf))
+
 (setq make-backup-files nil)
 
 ;; Keybindings
