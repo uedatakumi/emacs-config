@@ -58,7 +58,7 @@
 (require 'web-mode)
 
 (require 'whitespace)
-(setq whitespace-style '(face spaces space-mark tabs tab-mark))
+(setq whitespace-style '(face spaces space-mark tabs tab-mark trailing))
 (global-whitespace-mode t)
 
 (require 'yaml-mode)
