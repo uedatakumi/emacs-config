@@ -70,6 +70,9 @@
 
 (setq make-backup-files nil)
 
+(setenv "PATH" (format "%s:%s" (getenv "PATH") "/usr/local/bin"))
+(setq exec-path (split-string (getenv "PATH") ":"))
+
 ;; Keybindings
 (define-key global-map (kbd "C-;")     'helm-mini)
 (define-key global-map (kbd "M-x")     'helm-M-x)
