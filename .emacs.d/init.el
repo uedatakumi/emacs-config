@@ -29,6 +29,9 @@
   (unless (package-installed-p package)
     (package-install package)))
 
+;; Theme
+(load-theme 'base16-default-dark t)
+
 (require 'ag)
 
 (require 'auto-complete)
@@ -93,9 +96,6 @@
   (setq inhibit-startup-message t)
   (setq initial-scratch-message "")
   (setq inhibit-splash-screen t))
-
-;; Theme
-(load-theme 'base16-default-dark t)
 
 ;; Toolbar
 (tool-bar-mode 0)
