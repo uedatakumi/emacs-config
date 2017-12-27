@@ -71,6 +71,7 @@
 (setq make-backup-files nil)
 
 (setenv "PATH" (format "%s:%s" (getenv "PATH") "/usr/local/bin"))
+(setenv "PATH" (format "%s:%s" (getenv "PATH") "~/.rbenv/shims"))
 (setq exec-path (split-string (getenv "PATH") ":"))
 
 ;; Keybindings
