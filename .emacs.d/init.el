@@ -64,6 +64,19 @@
 (setq whitespace-style '(face spaces space-mark tabs tab-mark trailing))
 (global-whitespace-mode t)
 
+(set-face-attribute 'whitespace-space nil
+                    :background "#181818"
+                    :foreground "#383838"
+                    :weight 'bold)
+(set-face-attribute 'whitespace-tab nil
+                    :background "#181818"
+                    :foreground "#383838"
+                    :underline nil)
+(set-face-attribute 'whitespace-trailing nil
+                    :background "#181818"
+                    :foreground "#585858"
+                    :underline t)
+
 (require 'yaml-mode)
 
 (setq helm-mini-default-sources
