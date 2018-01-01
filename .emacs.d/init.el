@@ -96,6 +96,7 @@
 (define-key global-map (kbd "C-x C-f") 'helm-find-files)
 (define-key global-map (kbd "M-p")     'helm-projectile)
 (define-key global-map (kbd "s-F")     'helm-projectile-ag)
+(define-key helm-find-files-map (kbd "TAB") 'helm-execute-persistent-action)
 
 (defun other-window-or-split ()
   (interactive)
