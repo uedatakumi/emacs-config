@@ -60,9 +60,6 @@
 (require 'ruby-mode)
 (setq ruby-insert-encoding-magic-comment nil)
 
-(projectile-mode)
-(helm-projectile-on)
-
 (require 'web-mode)
 
 (require 'whitespace)
@@ -83,6 +80,9 @@
                     :underline t)
 
 (require 'yaml-mode)
+
+(projectile-mode)
+(helm-projectile-on)
 
 (setq helm-mini-default-sources
       '(helm-source-projectile-files-list
