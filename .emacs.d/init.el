@@ -8,8 +8,8 @@
 (defvar my/favorite-packages
   '(
     ag
+    atom-one-dark-theme
     auto-complete
-    base16-theme
     flycheck
     flycheck-pos-tip
     git-gutter
@@ -31,7 +31,7 @@
     (package-install package)))
 
 ;; Theme
-(load-theme 'base16-default-dark t)
+(load-theme 'atom-one-dark t)
 
 (require 'ag)
 
@@ -67,16 +67,16 @@
 (global-whitespace-mode t)
 
 (set-face-attribute 'whitespace-space nil
-                    :background "#181818"
-                    :foreground "#383838"
+                    :background "#282C34"
+                    :foreground "#3E4451"
                     :weight 'bold)
 (set-face-attribute 'whitespace-tab nil
-                    :background "#181818"
-                    :foreground "#383838"
+                    :background "#282C34"
+                    :foreground "#3E4451"
                     :underline nil)
 (set-face-attribute 'whitespace-trailing nil
-                    :background "#181818"
-                    :foreground "#585858"
+                    :background "#282C34"
+                    :foreground "#3E4451"
                     :underline t)
 
 (require 'yaml-mode)
