@@ -10,6 +10,7 @@
     ag
     atom-one-dark-theme
     auto-complete
+    elixir-mode
     flycheck
     flycheck-pos-tip
     git-gutter
