@@ -35,6 +35,9 @@
 ;; Theme
 (load-theme 'atom-one-dark t)
 
+;; Line numbers
+(global-display-line-numbers-mode)
+
 (require 'ag)
 
 (require 'auto-complete)
