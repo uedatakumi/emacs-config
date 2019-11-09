@@ -54,6 +54,9 @@
 
 (require 'haml-mode)
 
+(require 'haskell-mode)
+(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
+
 (require 'helm-config)
 (helm-mode 1)
 
