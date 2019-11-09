@@ -22,6 +22,7 @@
     js2-mode
     markdown-mode
     multiple-cursors
+    powerline
     projectile
     rubocop
     ruby-mode
@@ -65,6 +66,9 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+(require 'powerline)
+(powerline-center-theme)
 
 (require 'rubocop)
 (add-hook 'ruby-mode-hook 'rubocop-mode)
