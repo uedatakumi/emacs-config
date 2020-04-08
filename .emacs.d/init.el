@@ -169,9 +169,6 @@
 ;; Line Spacing
 (setq-default line-spacing 3)
 
-;; Cursor
-(setq-default cursor-type 'bar)
-
 ;; Tabs
 (setq-default tab-width 2 indent-tabs-mode nil)
 
