@@ -123,6 +123,9 @@
 (setq exec-path (split-string (getenv "PATH") ":"))
 
 ;; Keybindings
+(define-key global-map (kbd "s-;")     (kbd "M-;"))
+(define-key global-map (kbd "s-+")     (kbd "C-x C-+"))
+(define-key global-map (kbd "s--")     (kbd "C-x C--"))
 (define-key global-map (kbd "C-;")     'helm-mini)
 (define-key global-map (kbd "M-x")     'helm-M-x)
 (define-key global-map (kbd "C-x C-f") 'helm-find-files)
