@@ -60,6 +60,7 @@
 
 (require 'haskell-mode)
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
+(setq haskell-process-type 'stack-ghci)
 
 (require 'helm-config)
 (helm-mode 1)
@@ -125,7 +126,7 @@
 ;; Keybindings
 (define-key global-map (kbd "s-;")     (kbd "M-;"))
 (define-key global-map (kbd "s-+")     (kbd "C-x C-+"))
-(define-key global-map (kbd "s--")     (kbd "C-x C--"))
+(define-key global-map (kbd "s-_")     (kbd "C-x C--"))
 (define-key global-map (kbd "C-;")     'helm-mini)
 (define-key global-map (kbd "M-x")     'helm-M-x)
 (define-key global-map (kbd "C-x C-f") 'helm-find-files)
@@ -193,3 +194,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
