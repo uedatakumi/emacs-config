@@ -13,7 +13,6 @@
 (defvar my/favorite-packages
   '(
     ag
-    atom-one-dark-theme
     auto-complete
     elixir-mode
     flycheck
@@ -39,7 +38,7 @@
     (package-install package)))
 
 ;; Theme
-(load-theme 'atom-one-dark t)
+(load-theme 'monokai t)
 
 ;; Line numbers
 (global-display-line-numbers-mode)
@@ -89,19 +88,6 @@
 (require 'whitespace)
 (setq whitespace-style '(face spaces space-mark tabs tab-mark trailing))
 (global-whitespace-mode t)
-
-(set-face-attribute 'whitespace-space nil
-                    :background "#282C34"
-                    :foreground "#3E4451"
-                    :weight 'bold)
-(set-face-attribute 'whitespace-tab nil
-                    :background "#282C34"
-                    :foreground "#3E4451"
-                    :underline nil)
-(set-face-attribute 'whitespace-trailing nil
-                    :background "#282C34"
-                    :foreground "#3E4451"
-                    :underline t)
 
 (set-fontset-font (frame-parameter nil 'font)
                   'japanese-jisx0208
@@ -178,9 +164,6 @@
 
 ;; Highlight (Active Region)
 (transient-mark-mode t)
-
-;; Background Color (Active Region)
-(set-face-background 'region "#555")
 
 ;; Path
 (setq frame-title-format "%f")
