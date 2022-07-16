@@ -89,9 +89,10 @@
 (setq whitespace-style '(face spaces space-mark tabs tab-mark trailing))
 (global-whitespace-mode t)
 
-(set-fontset-font (frame-parameter nil 'font)
-                  'japanese-jisx0208
-                  (font-spec :family "ヒラギノ角ゴシック" :size 12))
+(if (eq window-system 'w32)
+    (set-fontset-font
+     nil 'ascii
+     (font-spec :family "Consolas")))
 
 (require 'yaml-mode)
 
