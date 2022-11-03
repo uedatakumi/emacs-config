@@ -24,6 +24,7 @@
     helm-projectile
     js2-mode
     markdown-mode
+    monokai-theme
     multiple-cursors
     powerline
     projectile
