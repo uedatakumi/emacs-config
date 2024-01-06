@@ -62,9 +62,6 @@
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 (setq haskell-process-type 'stack-ghci)
 
-(require 'helm-config)
-(helm-mode 1)
-
 (require 'js2-mode)
 (autoload 'js2-mode "js2-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
