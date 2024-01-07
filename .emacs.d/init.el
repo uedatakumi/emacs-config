@@ -133,6 +133,9 @@
   (setq initial-scratch-message "")
   (setq inhibit-splash-screen t))
 
+;; Tabbar
+(tab-bar-mode 1)
+
 ;; Toolbar
 (tool-bar-mode 0)
 
