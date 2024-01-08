@@ -1,6 +1,6 @@
+;;; init.el --- My Emacs configuration file
 
-;;; init.el
-;;; Commentary: my initialization file for emacs
+;;; Code:
 
 ;; Package
 (require 'package)
