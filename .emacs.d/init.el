@@ -1,5 +1,9 @@
 ;;; init.el --- My Emacs configuration file
 
+;;; Commentary:
+
+;; Configuration for GNU Emacs 29
+
 ;;; Code:
 
 ;; Package
@@ -182,4 +186,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;;; init.el ends here
 
