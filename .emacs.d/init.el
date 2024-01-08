@@ -44,6 +44,9 @@
 ;; Line numbers
 (global-display-line-numbers-mode)
 
+;; Face attribute
+(set-face-attribute 'default nil :height 140)
+
 (require 'ag)
 
 (require 'auto-complete)
