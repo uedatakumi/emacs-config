@@ -84,7 +84,7 @@
 (require 'web-mode)
 
 (require 'whitespace)
-(setq whitespace-style '(face spaces space-mark tabs tab-mark trailing))
+(setq whitespace-style '(face spaces tabs trailing))
 (global-whitespace-mode t)
 
 (if (eq window-system 'w32)
